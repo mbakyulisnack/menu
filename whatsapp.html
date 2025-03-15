@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link rel="icon" href="logo.jpg" type="image/png">
+    <link rel="apple-touch-icon" href="logo.jpg">
+    <title>WhatsApp - Mbak Yuli Snack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #DD8A44; /* Warna latar belakang */
+            color: #000; /* Warna teks */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Pusatkan konten secara horizontal */
+            justify-content: flex-start; /* Pusatkan konten secara vertikal */
+            min-height: 100vh; /* Mengatur tinggi minimum body menjadi 100% dari viewport */
+            overflow-y: auto; /* Mengizinkan scroll vertikal */
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center; /* Pusatkan gambar secara horizontal */
+            width: 100%; /* Lebar 100% */
+            margin-bottom: 20px; /* Jarak antara kontainer */
+        }
+
+        .hero img {
+            max-width: 100%; /* Gambar responsif */
+            height: auto; /* Menjaga rasio aspek */
+        }
+
+        .container {
+            max-width: 400px; /* Lebar maksimum kontainer */
+            width: 100%; /* Lebar kontainer 100% */
+            padding: 20px; /* Ruang di dalam kontainer */
+            text-align: center; /* Pusatkan teks */
+            background-color: white; /* Warna latar belakang kontainer */
+            border-radius: 10px; /* Sudut kontainer yang membulat */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan kontainer */
+            margin-bottom: 20px; /* Jarak antara kontainer */
+        }
+
+        h1 {
+            font-size: 24px; /* Ukuran teks judul */
+            margin-bottom: 20px; /* Ruang di bawah judul */
+        }
+
+        .link-button {
+            display: block;
+            background-color: #25D366; /* Warna latar belakang WhatsApp */
+            color: white; /* Warna teks */
+            padding: 15px; /* Ruang di dalam tombol */
+            margin: 10px 0; /* Ruang di sekitar tombol */
+            border-radius: 5px; /* Sudut tombol yang membulat */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            font-size: 18px; /* Ukuran teks */
+            transition: background-color 0.3s; /* Efek transisi */
+        }
+
+        .link-button:hover {
+            background-color: #128C7E; /* Warna saat hover */
+        }
+
+        .map-button {
+            background-color: #4285F4; /* Warna latar belakang Google Maps */
+        }
+
+        .map-button:hover {
+            background-color: #357AE8; /* Warna saat hover */
+        }
+
+        /* Button WhatsApp melayang */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 24px;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="hero.jpg" alt="Hero Image">
+    </div>
+    <div class="container">
+        <h1>Cabang Wonokerto</h1>
+        <a href="https://wa.me/6285869274152" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Bu Yuli )
+        </a>
+        <a href="https://wa.me/6285600508858" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Mba Ais )
+        </a>
+        <a href="https://www.google.com/maps/place/MUSHOLLA+AN-NUR/@-6.8844525,109.6282239,21z/data=!4m6!3m5!1s0x2e702773fcc5ca49:0x89d1532fda8a86e4!8m2!3d-6.8844464!4d109.6282211!16s%2Fg%2F11rsrcfk7q?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" class="link-button map-button" target="_blank">
+            <i class="fas fa-map-marker-alt icon"></i> Lihat di Google Maps
+        </a>
+    </div>
+    <div class="container">
+        <h1>Cabang Kuripan Lor</h1>
+        <a href="https://wa.me/6282133505007" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Mas Subhan )
+        </a>
+        <a href="https://wa.me/6285713411592" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Mba Hidayah )
+        </a>
+        <a href="https://www.google.com/maps/place/6%C2%B054'48.8%22S+109%C2%B040'33.8%22E/@-6.913562,109.676056,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-6.913562!4d109.676056?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" class="link-button map-button" target="_blank">
+            <i class="fas fa-map-marker-alt icon"></i> Lihat di Google Maps
+        </a>
+    </div>
+    <div class="container">
+        <h1>Cabang Buaran</h1>
+        <a href="https://wa.me/6285848887688" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Mas Andi )
+        </a>
+        <a href="https://wa.me/6285600508858" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Mba Ais )
+        </a>
+        <a href="https://www.google.com/maps/place/6%C2%B055'21.5%22S+109%C2%B039'25.4%22E/@-6.922633,109.657065,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-6.922633!4d109.657065?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" class="link-button map-button" target="_blank">
+            <i class="fas fa-map-marker-alt icon"></i> Lihat di Google Maps
+        </a>
+    </div>
+    <div class="container">
+        <h1>Cabang Babalan Lor</h1>
+        <a href="https://wa.me/6281329698920" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Mas Huda )
+        </a>
+        <a href="https://www.google.com/maps/search/-6.933386,+109.604791?entry=tts&g_ep=EgoyMDI0MDcxMC4wKgBIAVAD" class="link-button map-button" target="_blank">
+            <i class="fas fa-map-marker-alt icon"></i> Lihat di Google Maps
+        </a>
+    </div>
+    <div class="container">
+        <h1>Cabang Kajen</h1>
+        <a href="https://wa.me/6285601709399" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Mba Ika )
+        </a>
+        <a href="https://wa.me/97433490203" class="link-button" target="_blank">
+            <i class="fab fa-whatsapp icon"></i> Hubungi ( Mas Bayu )
+        </a>
+        <a href="https://www.google.com/maps/place/6%C2%B059'22.5%22S+109%C2%B035'49.5%22E/@-6.9896582,109.5951683,17z/data=!4m4!3m3!8m2!3d-6.989573!4d109.597078?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" class="link-button map-button" target="_blank">
+            <i class="fas fa-map-marker-alt icon"></i> Lihat di Google Maps
+        </a>
+    </div>
+</body>
+</html>
+    
