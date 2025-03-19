@@ -3,101 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logo.jpg" type="image/x-icon">
-    <link rel="icon" href="logo.jpg" type="image/png">
-    <link rel="apple-touch-icon" href="logo.jpg">
     <title>WhatsApp - Mbak Yuli Snack</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background-color: #DD8A44;
+            text-align: center;
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #DD8A44; /* Warna latar belakang */
-            color: #000; /* Warna teks */
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Pusatkan konten secara horizontal */
-            justify-content: flex-start; /* Pusatkan konten secara vertikal */
-            min-height: 100vh; /* Mengatur tinggi minimum body menjadi 100% dari viewport */
-            overflow-y: auto; /* Mengizinkan scroll vertikal */
+            padding: 0;
         }
-
         .hero {
-            display: flex;
-            justify-content: center; /* Pusatkan gambar secara horizontal */
-            width: 100%; /* Lebar 100% */
-            margin-bottom: 20px; /* Jarak antara kontainer */
+            background-color: #DD8A44;
+            padding: 20px;
         }
-
         .hero img {
-            max-width: 100%; /* Gambar responsif */
-            height: auto; /* Menjaga rasio aspek */
+            max-width: 100%;
+            height: auto;
         }
-
         .container {
-            max-width: 400px; /* Lebar maksimum kontainer */
-            width: 100%; /* Lebar kontainer 100% */
-            padding: 20px; /* Ruang di dalam kontainer */
-            text-align: center; /* Pusatkan teks */
-            background-color: white; /* Warna latar belakang kontainer */
-            border-radius: 10px; /* Sudut kontainer yang membulat */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan kontainer */
-            margin-bottom: 20px; /* Jarak antara kontainer */
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
         }
-
         h1 {
-            font-size: 24px; /* Ukuran teks judul */
-            margin-bottom: 20px; /* Ruang di bawah judul */
+            color: #000000;
+            font-size: 20px;
         }
-
         .link-button {
-            display: block;
-            background-color: #25D366; /* Warna latar belakang WhatsApp */
-            color: white; /* Warna teks */
-            padding: 15px; /* Ruang di dalam tombol */
-            margin: 10px 0; /* Ruang di sekitar tombol */
-            border-radius: 5px; /* Sudut tombol yang membulat */
-            text-decoration: none; /* Menghilangkan garis bawah */
-            font-size: 18px; /* Ukuran teks */
-            transition: background-color 0.3s; /* Efek transisi */
-        }
-
-        .link-button:hover {
-            background-color: #128C7E; /* Warna saat hover */
-        }
-
-        .map-button {
-            background-color: #4285F4; /* Warna latar belakang Google Maps */
-        }
-
-        .map-button:hover {
-            background-color: #357AE8; /* Warna saat hover */
-        }
-
-        /* Button WhatsApp melayang */
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            font-size: 24px;
-            transition: background-color 0.3s;
+            text-decoration: none;
+            background: #DD8A44;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
         }
-
-        .whatsapp-button:hover {
-            background-color: #128C7E;
+        .link-button:hover {
+            background: #bb6f33;
+        }
+        .map-button {
+            background: #4CAF50;
+        }
+        .map-button:hover {
+            background: #3e8e41;
+        }
+        .icon {
+            margin-right: 8px;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="hero">
@@ -162,4 +123,3 @@
     </div>
 </body>
 </html>
-    
