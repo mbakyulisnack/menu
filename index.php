@@ -3,7 +3,7 @@
 header("Location: https://jajanmurah.barkaspekalongan.com");
 exit();
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -93,4 +93,4 @@ exit();
     <a href="whatsapp.html" class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i> </a>
 </body>
-</html>
+</html> -->
